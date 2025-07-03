@@ -13,12 +13,11 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-8 h-8 bg-crunch-navy rounded-lg flex items-center justify-center mr-3">
-                <div className="w-4 h-4 bg-crunch-blue rounded-full relative">
-                  <div className="absolute inset-0 bg-crunch-white rounded-full scale-50"></div>
-                </div>
-              </div>
-              <span className="text-2xl font-bold crunch-navy">CrunchMode</span>
+              <img 
+                src="/lovable-uploads/a29858d1-f12d-4233-877a-fbed402486d5.png" 
+                alt="CrunchMode Logo" 
+                className="h-12 w-auto"
+              />
             </div>
           </div>
 
