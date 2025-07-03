@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// CrunchMode brand colors
+				'crunch-navy': 'hsl(214 100% 12%)',
+				'crunch-blue': 'hsl(211 100% 50%)',
+				'crunch-white': 'hsl(0 0% 98%)',
+				'crunch-gray': 'hsl(0 0% 20%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
