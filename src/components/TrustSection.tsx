@@ -25,7 +25,7 @@ const TrustSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Why CrunchMode?
+            Why Crvnch Mode?
           </h2>
           <p className="text-xl text-crunch-white opacity-80 max-w-2xl mx-auto">
             Cut through the noise with reviews that actually help you make the right choice.
