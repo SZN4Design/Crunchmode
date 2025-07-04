@@ -9,14 +9,14 @@ const Navigation = () => {
   return (
     <nav className="bg-crunch-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <img 
                 src="/lovable-uploads/39243e3f-1fc4-4c40-b741-c11d73378079.png" 
                 alt="CrunchMode Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </div>
           </div>
