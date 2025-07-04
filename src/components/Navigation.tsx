@@ -14,7 +14,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <img 
-                src="/lovable-uploads/a29858d1-f12d-4233-877a-fbed402486d5.png" 
+                src="/lovable-uploads/39243e3f-1fc4-4c40-b741-c11d73378079.png" 
                 alt="CrunchMode Logo" 
                 className="h-12 w-auto"
               />
