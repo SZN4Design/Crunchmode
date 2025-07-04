@@ -13,7 +13,7 @@ const Footer = () => {
                   <div className="absolute inset-0 bg-crunch-navy rounded-full scale-50"></div>
                 </div>
               </div>
-              <span className="text-3xl font-bold">Crvnch Mode</span>
+              <span className="text-3xl font-bold">CrvnchMode</span>
             </div>
             <p className="text-crunch-white opacity-80 max-w-md leading-relaxed mb-6">
               Honest car reviews and smart buying advice for everyday drivers. No dealership nonsense, just real insights to help you make the right choice.
@@ -55,7 +55,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center">
           <p className="text-crunch-white opacity-60">
-            © 2024 Crvnch Mode. All rights reserved. | Honest reviews for smart buyers.
+            © 2024 CrvnchMode. All rights reserved. | Honest reviews for smart buyers.
           </p>
         </div>
       </div>

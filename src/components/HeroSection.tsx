@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="text-center animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-gradient">Shift into</span><br />
-            <span className="crunch-navy">Crvnch Mode</span>
+            <span className="crunch-navy">CrvnchMode</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-crunch-gray max-w-3xl mx-auto mb-12 leading-relaxed">
