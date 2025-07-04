@@ -9,7 +9,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <img src="/lovable-uploads/8d277ac6-0f93-440b-913c-ee7a82a5442c.png" alt="CrvnchMode Logo" className="h-40 md:h-60 w-auto" />
+              <img src="/lovable-uploads/8d277ac6-0f93-440b-913c-ee7a82a5442c.png" alt="CrvnchMode Logo" className="h-40 md:h-60 w-auto object-contain" />
             </div>
           </div>
 
