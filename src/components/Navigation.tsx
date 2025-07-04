@@ -1,23 +1,15 @@
-
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  return (
-    <nav className="bg-crunch-white border-b border-gray-100 sticky top-0 z-50">
+  return <nav className="bg-crunch-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <img 
-                src="/lovable-uploads/8d277ac6-0f93-440b-913c-ee7a82a5442c.png" 
-                alt="CrvnchMode Logo" 
-                className="h-16 md:h-20 w-auto"
-              />
+              <img src="/lovable-uploads/8d277ac6-0f93-440b-913c-ee7a82a5442c.png" alt="CrvnchMode Logo" className="h-40 md:h-60 w-auto" />
             </div>
           </div>
 
@@ -41,18 +33,14 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-crunch-gray hover:text-crunch-blue p-2"
-            >
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-crunch-gray hover:text-crunch-blue p-2">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
+        {isMenuOpen && <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <a href="#reviews" className="text-crunch-gray hover:text-crunch-blue block px-3 py-2 text-base font-medium">
                 Reviews
@@ -67,11 +55,8 @@ const Navigation = () => {
                 Find Your Car
               </Button>
             </div>
-          </div>
-        )}
+          </div>}
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navigation;
