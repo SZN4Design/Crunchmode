@@ -16,7 +16,7 @@ const Navigation = () => {
               <img 
                 src="/lovable-uploads/8d277ac6-0f93-440b-913c-ee7a82a5442c.png" 
                 alt="CrvnchMode Logo" 
-                className="h-20 w-auto"
+                className="h-20 md:h-60 w-auto"
               />
             </div>
           </div>
