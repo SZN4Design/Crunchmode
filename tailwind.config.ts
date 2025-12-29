@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Montserrat', 'sans-serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -66,11 +65,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// CrunchMode brand colors
-				'crunch-navy': 'hsl(214 100% 12%)',
-				'crunch-blue': 'hsl(211 100% 50%)',
-				'crunch-white': 'hsl(0 0% 98%)',
-				'crunch-gray': 'hsl(0 0% 20%)',
+				// CrunchMode semantic colors
+				trust: 'hsl(var(--trust))',
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
+				caution: 'hsl(var(--caution))',
+				// CrunchScore colors
+				'score-excellent': 'hsl(var(--score-excellent))',
+				'score-good': 'hsl(var(--score-good))',
+				'score-fair': 'hsl(var(--score-fair))',
+				'score-poor': 'hsl(var(--score-poor))',
+				'score-avoid': 'hsl(var(--score-avoid))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -79,25 +84,22 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'pulse-soft': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-soft': 'pulse-soft 2s ease-in-out infinite'
 			}
 		}
 	},
