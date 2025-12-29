@@ -44,13 +44,13 @@ const reviews = [
 
 const FeaturedReviews = () => {
   return (
-    <section id="reviews" className="py-20 bg-white">
+    <section id="reviews" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold crunch-navy mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Latest Reviews
           </h2>
-          <p className="text-xl text-crunch-gray max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Real-world testing. Honest opinions. No manufacturer influence.
           </p>
         </div>
@@ -101,7 +101,7 @@ const FeaturedReviews = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-crunch-navy hover:bg-gray-800 text-white px-8 py-3">
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3">
             View All Reviews
           </Button>
         </div>
