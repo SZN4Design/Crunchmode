@@ -1,8 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import { Menu, X, Play, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import logo from '@/assets/crvnchmode-logo.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +22,9 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/8d277ac6-0f93-440b-913c-ee7a82a5442c.png" 
-              alt="CrunchMode" 
-              className="h-10 w-auto" 
+              src={logo} 
+              alt="CrvnchMode" 
+              className="h-12 w-auto" 
             />
           </Link>
 
