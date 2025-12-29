@@ -1,49 +1,62 @@
-
-import { Play, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Play, CheckCircle, TrendingUp, Shield, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-crunch-white to-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-background py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-gradient">Shift into</span><br />
-            <span className="crunch-navy">CrvnchMode</span>
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 border border-primary/20 rounded-full text-sm text-primary mb-6">
+            <Shield className="w-4 h-4" />
+            Decision support, not dealership pressure
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight text-balance">
+            Turn car reviews into<br />
+            <span className="text-primary">confident buying decisions</span>
           </h1>
-          
-          <p className="text-xl md:text-2xl text-crunch-gray max-w-3xl mx-auto mb-12 leading-relaxed">
-            Honest car reviews. Smart buying tips. No dealership fluff.
+
+          {/* Subheadline */}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+            CrunchMode combines trusted YouTube reviews, real ownership data, and smart quizzes to find your perfect car match.
           </p>
 
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button size="lg" className="bg-crunch-blue hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg">
-              Find Your Next Car
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" asChild className="text-base px-8">
+              <Link to="/quiz">
+                Find Your Best-Fit Car
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-crunch-navy text-crunch-navy hover:bg-crunch-navy hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Reviews
+            <Button size="lg" variant="outline" asChild className="text-base px-8">
+              <Link to="/reviews">
+                <Play className="mr-2 h-5 w-5" />
+                Watch Reviews
+              </Link>
             </Button>
           </div>
 
-          {/* Hero Visual */}
-          <div className="relative max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-crunch-navy to-crunch-blue rounded-2xl p-8 shadow-2xl animate-scale-in">
-              <div className="grid grid-cols-3 gap-6 items-center">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">500+</div>
-                  <div className="text-crunch-white opacity-80">Cars Reviewed</div>
-                </div>
-                <div className="text-center border-x border-white/20">
-                  <div className="text-3xl font-bold text-white mb-2">1M+</div>
-                  <div className="text-crunch-white opacity-80">Views</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">50K+</div>
-                  <div className="text-crunch-white opacity-80">Cars Sold</div>
-                </div>
-              </div>
+          {/* Trust Indicators */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+            <div className="text-center p-4">
+              <div className="text-3xl font-bold text-foreground mb-1">100+</div>
+              <div className="text-sm text-muted-foreground">Cars Analyzed</div>
+            </div>
+            <div className="text-center p-4">
+              <div className="text-3xl font-bold text-foreground mb-1">5</div>
+              <div className="text-sm text-muted-foreground">CrunchScore™ Pillars</div>
+            </div>
+            <div className="text-center p-4">
+              <div className="text-3xl font-bold text-foreground mb-1">0</div>
+              <div className="text-sm text-muted-foreground">Dealership Affiliations</div>
+            </div>
+            <div className="text-center p-4">
+              <div className="text-3xl font-bold text-foreground mb-1">100%</div>
+              <div className="text-sm text-muted-foreground">Independent</div>
             </div>
           </div>
         </div>
